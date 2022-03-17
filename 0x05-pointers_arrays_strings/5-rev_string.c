@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * rev_string - print reverse characters.
- * @s: validate the character
- * Return: Always 0.
+ * reverse_string - print reverse characters
+ * @a: validate the character
+ * Return: Always 0
  */
-void rev_string(char *s)
+void reverse_string(int *a, int n)
 {
-        int i = 0, a = 0, Aux;
-        while (s[i] != '\0')
-        {
-                i++;
-        }
-        i--;
-        while (i > a)
-        {
-                Aux = s[i];
-                s[i--] = s[a];
-                s[a++] = Aux;
-        }
+	int i, j, tmp;
+
+	j = n - 1;
+
+	for (i = 0; i < n / 2; i++)
+	{
+		tmp = a[i];
+		a[i] = a[j];
+		a[j--] = tmp;
+	}
 }
