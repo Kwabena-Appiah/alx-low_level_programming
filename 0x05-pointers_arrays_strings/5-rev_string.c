@@ -22,5 +22,3 @@ void rev_string(char *s)
                 s[a++] = Aux;
         }
 }
-~
-
