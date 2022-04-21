@@ -12,4 +12,3 @@ format: db `Hello, Holberton\n`,0
 
     Terms
     Privacy
-
